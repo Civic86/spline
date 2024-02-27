@@ -16,6 +16,8 @@ import Nav from '@/components/header'
 import Pricing from '@/components/price'
 import Footer from '@/components/footer'
 import Form from '@/components/form'
+import Spline from '@splinetool/react-spline';
+
 
 export default function CallToActionWithIllustration() {
   return (
@@ -55,8 +57,7 @@ export default function CallToActionWithIllustration() {
             </Button>
           </Stack>
         </Stack>
-        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.54/build/spline-viewer.js"></script>
-        {/* <spline-viewer url="https://prod.spline.design/uqKV1K5Be7Pt2ItV/scene.splinecode"></spline-viewer> */}
+        <Spline scene="https://prod.spline.design/uqKV1K5Be7Pt2ItV/scene.splinecode" />
         <Pricing/>
         <Box alignContent="center" justifyContent="center">
           <Form />
